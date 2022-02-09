@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="ApiController\" />
+    <None Remove="Services\" />
+    <None Remove="Services\Intefraces\" />
+    <None Remove="Services\Implementions\" />
+    <None Remove="SendGrid" />
+    <None Remove="Swashbuckle.AspNetCore" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ApiController\" />
+    <Folder Include="Services\" />
+    <Folder Include="Services\Intefraces\" />
+    <Folder Include="Services\Implementions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="SendGrid" Version="9.25.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+</Project>
