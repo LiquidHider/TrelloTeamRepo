@@ -7,14 +7,15 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="img/icon.png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
-    <title>Харківський Національний Економічний Університет ім. Семена Кузнеця </title>
+    <title>Харківський Національний Економічний Університет ім. Семена Кузнеця</title>
 </head>
 <body class="body">
     <header class="header">
         <div class="main_title_container">
-            <div class="main_title"> 
-                <br>Харківський Національний Економічний Університет ім. Семена Кузнеця
+            <div class="main_title" id="start"> 
+                Харківський Національний Економічний Університет ім. Семена Кузнеця
             </div>
         </div>
         <div class="hello_conteiner">
@@ -27,7 +28,9 @@
                     <br>Розвивайся з нами!<br>У нас завжди цікаво.
                 </div>
                 <div>
-                    <input class="hello_conteiner_text_button" type="submit" value="Подати заяву">
+                    <div class="hello_conteiner_text_button">
+                        <a href="#form">Подати заяву</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -95,7 +98,7 @@
                 </div>
             </div>
         </div>
-        <div class="form_conteiner">
+        <div class="form_conteiner" id="form">
             <div></div>
             <form>
                 <div class="form_conteiner_titel">
@@ -232,5 +235,13 @@
             </div>
         </div>
     </footer>
+    <script type="text/javascript">
+        if (location.hash) {
+        setTimeout(function() {
+
+            window.scrollTo(0, 0);
+        }, 1);
+        };
+    </script>
 </body>
 </html>

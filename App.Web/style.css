@@ -7,30 +7,32 @@ html, body {
     font-family: 'Exo 2';
     background: #252B42; 
     z-index: 0;
-    max-width: 1600px;
+    max-width: 2200px;
 }
 /*END Global settings for all pages*/
 
 /*START Main Title*/
 .main_title_container{
     max-height: 50px;
-    max-width: 1600px;
+    max-width: 2200px;
 }
 .main_title{
     color: #FFFFFF;
     font-style: normal;
     font-weight: 500;
-    font-size: 2.5vw;
-    line-height: 24px;
+    font-size: 3vw;
+    line-height: 100%;
     letter-spacing: 0.2px;
     text-align: center;
+    max-width: 60%;
+    margin-left: 20%;
 }
 /*END Main Title*/
 
 /*START First Page*/
 .hello_conteiner{
     grid-gap: 0;
-    max-width: 1600px;
+    max-width: 2200px;
     display: grid;
     grid-template-columns: 1.8fr 1fr;
 }
@@ -54,7 +56,7 @@ html, body {
 .hello_conteiner_text_text{
     white-space: nowrap;
     font-style: normal;
-    font-size: 1.5vw;
+    font-size: 1.8vw;
     letter-spacing: 1%;
     color: #FFFFFF;
 }
@@ -67,6 +69,21 @@ html, body {
     font-size: 1.5vw;
     padding: 3%;
     margin-top: 5%;
+    border: none;
+    cursor: pointer;
+    transition: transform .3s;
+    font-weight: bold;
+    max-width: 60%;
+}
+.hello_conteiner_text_button a{
+    text-decoration: none;
+    padding-left: 12%;
+    padding-right: 12%;
+}
+.hello_conteiner_text_button:hover{
+    transform: scale(1.2);
+    background:#38A3F1;
+    color: #FFFFFF;
 }
 .header{
     background-image: url(img/BG1.png);
@@ -81,18 +98,23 @@ html, body {
     .hello_conteiner{
         max-width: 992px;
     }
+    .hello_conteiner_text_button{
+        max-width: 50%;
+    }
 }
 @media (max-width:992px) {
     .hello_conteiner{
         max-width: 768px;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1.2fr 1fr;
         grid-gap: 0;
     }
     .hello_conteiner_text{
         margin-left: -15%;
         margin-top: 0;
     }
-    
+    .hello_conteiner_text_button{
+        max-width: 40%;
+    }
 }
 @media (max-width:768px) {
     .hello_conteiner{
@@ -100,6 +122,9 @@ html, body {
     }
     .main_conteiner_title{
         font-size: 2vw;
+    }
+    .hello_conteiner_text_button{
+        max-width: 32%;
     }
 }
 @media (max-width:576px) {
@@ -112,7 +137,7 @@ html, body {
 /*START information page*/
 .information_container{
     padding: 7%;
-    max-width: 1600px;
+    max-width: 2200px;
     align-items: center;
 }
 .information_container_title{
@@ -156,7 +181,7 @@ html, body {
 /*START directions page*/
 .directions_conteiner{
     padding: 7%;
-    max-width: 1600px;
+    max-width: 2200px;
     align-items: center;
     background-image: url(img/BG2.png);
     background-repeat: no-repeat;
@@ -229,7 +254,7 @@ html, body {
 /*START nonresident page*/
 .nonresident_conteiner{
     padding: 7%;
-    max-width: 1600px;
+    max-width: 2200px;
     align-items: center;
 }
 .nonresident_conteiner_section{
@@ -246,7 +271,7 @@ html, body {
     font-size: 2vw;
 }
 .nonresident_conteiner_section_text_text{
-    font-size: 1.2vw;
+    font-size: 1.3vw;
     margin-top: 1em;
 }
 .nonresident_conteiner_section_bubbles{
@@ -286,7 +311,7 @@ html, body {
 /*START dates page*/
 .dates_conteiner{
     padding: 7%;
-    max-width: 1600px;
+    max-width: 2200px;
     align-items: center;
     background-image: url(img/BG3.png);
     background-repeat: no-repeat;
@@ -372,7 +397,7 @@ html, body {
 /*START form page*/
 .form_conteiner{
     padding: 7%;
-    max-width: 1600px;
+    max-width: 2200px;
     align-items: center;
     text-align: center;
     display: grid;
@@ -398,18 +423,26 @@ html, body {
     padding: 3%;
     font-style: italic;
     width: 80%;
-    font-size: 0.9vw;
+    font-size: 1.1vw;
+    border: none;
+    margin-top: 1%;
 }
 .form_conteiner_button{
     margin-top: 1em;
 }
 .form_conteiner_button input{
     color: white;
-    font-size: 1.2vw;
+    font-size: 1.5vw;
     background-color:#EF2779;
     border-radius: 20px;
     padding: 3%;
     width: 86%;
+    cursor: pointer;
+    border: none;
+    transition: transform .3s;
+}
+.form_conteiner_button input:hover{
+    transform: scale(1.1);
 }
 .form_conteiner_checkboxs{
     color: #FFFFFF;
@@ -462,7 +495,7 @@ html, body {
 .people_conteiner{
    /* background-color:blue;*/
     padding: 7%;
-    max-width: 1600px;
+    max-width: 2200px;
     background-image: url(img/BG4.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -498,7 +531,7 @@ html, body {
 /*START footer page*/
 .footer_conteiner{
     padding: 7%;
-    max-width: 1600px;
+    max-width: 2200px;
     align-items: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
