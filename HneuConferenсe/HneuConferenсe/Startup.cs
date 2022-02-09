@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Frame.Server.Services.Implementations;
+﻿using Frame.Server.Services.Implementations;
 using HneuConferenсe.Services.Intefraces;
+using HneuConferenсe.Utilities;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -33,7 +29,7 @@ namespace HneuConferenсe
 
             services.AddRazorPages();
             services.AddSwaggerGen();
-            services.AddScoped<IEmailService, SendGridEmailService>();
+            services.AddScoped<IEmailService, MailKitEmailService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -41,7 +37,6 @@ namespace HneuConferenсe
         {
             if (env.IsDevelopment())
             {
-
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
                 app.UseSwaggerUI(options =>

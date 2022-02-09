@@ -5,6 +5,6 @@ namespace HneuConferenсe.Services.Intefraces
 {
     public interface IEmailService
     {
-        public Task SendAsync(string recipient, EmailTypes emailType);
+        public Task SendAsync(string recipient, string subject, string messageBody);
     }
 }
