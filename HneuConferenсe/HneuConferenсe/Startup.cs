@@ -30,6 +30,7 @@ namespace HneuConferenсe
             services.AddRazorPages();
             services.AddSwaggerGen();
             services.AddScoped<IEmailService, MailKitEmailService>();
+            services.AddScoped<IDataInserter, StringDataInserter>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
