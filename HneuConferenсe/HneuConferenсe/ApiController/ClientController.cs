@@ -25,7 +25,7 @@ namespace HneuConferenсe.ApiController
                 return Ok();
             }
             else
-                return BadRequest();
+                return BadRequest("Cannot send message: neededSendEmail is false.");
         }
     }
 }
