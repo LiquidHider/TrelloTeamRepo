@@ -28,7 +28,7 @@ namespace Frame.Server.Services.Implementations
             var subject = "Sending with SendGrid is Fun";
             var to = new EmailAddress(recipient, "Example User");
             var plainTextContent = "and easy to do anywhere, even with C#";
-            var htmlContent = "<strong>антон залупа конская</strong>";
+            var htmlContent = "<strong>Антон хороший мальчик.</strong>";
             var msg = MailHelper.CreateSingleEmail(from, to, subject, plainTextContent, htmlContent);
             var response = await client.SendEmailAsync(msg);
         }
