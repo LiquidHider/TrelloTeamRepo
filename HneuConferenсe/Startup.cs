@@ -3,6 +3,7 @@ using HneuConferenсe.Services.Intefraces;
 using HneuConferenсe.Utilities;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -22,10 +23,12 @@ namespace HneuConferenсe
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddCors(c =>
+            services.AddCors(o => o.AddPolicy("MyPolicy", builder =>
             {
-                c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin());
-            });
+                builder.AllowAnyOrigin()
+                       .AllowAnyMethod()
+                       .AllowAnyHeader();
+            }));
 
             services.AddRazorPages();
             services.AddSwaggerGen();
@@ -53,8 +56,6 @@ namespace HneuConferenсe
                 app.UseHsts();
             }
 
-            app.UseCors(options => options.AllowAnyOrigin());
-
             app.UseSwagger(options =>
             {
                 options.SerializeAsV2 = true;
@@ -64,6 +65,8 @@ namespace HneuConferenсe
             app.UseStaticFiles();
 
             app.UseRouting();
+
+            app.UseCors("MyPolicy");
 
             app.UseAuthorization();
 

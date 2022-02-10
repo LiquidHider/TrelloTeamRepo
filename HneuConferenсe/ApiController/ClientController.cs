@@ -1,12 +1,14 @@
 ﻿using System.Threading.Tasks;
 using HneuConferenсe.Services.Intefraces;
 using HneuConferenсe.Utilities;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 
 namespace HneuConferenсe.ApiController
 {
     [Route("api/")]
+    [EnableCors("MyPolicy")]
     public class ClientController: Controller
     {
         private const string EMAIL_CREDENTIALS_JSON_SECTION = "KhneuEmailCredentials";
@@ -50,8 +52,6 @@ namespace HneuConferenсe.ApiController
             {
                 return BadRequest("Cannot send message: neededSendEmail is false.");
             }
-
-
         }
     }
 }

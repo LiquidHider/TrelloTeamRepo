@@ -1,6 +1,6 @@
 document.getElementById("sendForm").addEventListener("click", function () {
 
-    var url = "https://localhost:5055/api/send_emails";
+    var url = "https://localhost:5003/api/send_emails";
 
     fetch(url, {
         method: 'POST',

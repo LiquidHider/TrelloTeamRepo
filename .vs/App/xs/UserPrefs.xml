@@ -1,0 +1,50 @@
+﻿<Properties StartupConfiguration="Multiple Projects">
+  <MonoDevelop.Ide.Workbench ActiveDocument="HneuConferenсe/Properties/launchSettings.json">
+    <Files>
+      <File FileName="App.Web/Startup.cs" Line="23" Column="10" />
+      <File FileName="HneuConferenсe/Startup.cs" Line="27" Column="41" />
+      <File FileName="HneuConferenсe/ApiController/ClientController.cs" Line="53" Column="14" />
+      <File FileName="HneuConferenсe/HneuConferenсe/obj/Debug/net5.0/Razor/Pages/Index.cshtml.g.cs" Line="51" Column="16" />
+      <File FileName="HneuConferenсe/MessagePatterns/LeadMessage.html" Line="1" Column="1" />
+      <File FileName="HneuConferenсe/MessagePatterns/ParticipantMessage.html" Line="1" Column="1" />
+      <File FileName="HneuConferenсe/Program.cs" Line="10" Column="1" />
+      <File FileName="HneuConferenсe/Properties/launchSettings.json" Line="6" Column="48" />
+      <File FileName="App.Web/Properties/launchSettings.json" Line="1" Column="1" />
+      <File FileName="App.Web/wwwroot/HttpClient.js" Line="3" Column="38" />
+      <File FileName="App.Web/wwwroot/appsettings.json" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="App" expanded="True">
+            <Node name="App.WebClient" expanded="True">
+              <Node name="wwwroot" expanded="True" />
+            </Node>
+            <Node name="HneuConferenсe" expanded="True">
+              <Node name="ApiController" expanded="True" />
+              <Node name="Properties" expanded="True">
+                <Node name="launchSettings.json" selected="True" />
+              </Node>
+              <Node name="Services" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.App.WebClient PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations>
+    <MultiItemSolutionRunConfiguration Id="Multiple Projects" Name="Multiple Projects">
+      <Items>
+        <StartupItem ItemId="{CA77FAD4-4ADB-40C2-A1E3-5DBB3078AD1B}" ItemName="App.WebClient" ConfigurationId="Default" />
+        <StartupItem ItemId="{FE2DC12A-AEAE-4503-BD78-4A66778C86B2}" ItemName="HneuConferenсe" ConfigurationId="Default" />
+      </Items>
+    </MultiItemSolutionRunConfiguration>
+  </MultiItemStartupConfigurations>
+  <MonoDevelop.Ide.ItemProperties.HneuConferenсe PreferredExecutionTarget="/Applications/Google Chrome.app" />
+</Properties>
