@@ -1,0 +1,38 @@
+﻿<Properties StartupConfiguration="{6685A3D1-5B1D-4900-9CB3-0BDD3CB38CB8}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="HneuConferenсe/Services/Implementions/SendGrisEmailService.cs">
+    <Files>
+      <File FileName="HneuConferenсe/ApiController/ClientController.cs" Line="21" Column="1" />
+      <File FileName="HneuConferenсe/Startup.cs" Line="74" Column="29" />
+      <File FileName="HneuConferenсe/Services/Implementions/SendGrisEmailService.cs" Line="14" Column="61" />
+      <File FileName="HneuConferenсe/EmailCredentials.cs" Line="9" Column="1" />
+      <File FileName="HneuConferenсe/ParticipantModel.cs" Line="1" Column="1" />
+      <File FileName="HneuConferenсe/SendGridAccountDetails.cs" Line="5" Column="102" />
+      <File FileName="HneuConferenсe/Program.cs" Line="16" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="HneuConferenсe" expanded="True">
+            <Node name="HneuConferenсe" expanded="True">
+              <Node name="ApiController" expanded="True" />
+              <Node name="Services" expanded="True">
+                <Node name="Implementions" expanded="True">
+                  <Node name="SendGrisEmailService.cs" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/user/Projects/HneuConferenсe/HneuConferenсe/Services/Implementions/SendGrisEmailService.cs" relfile="HneuConferenсe/Services/Implementions/SendGrisEmailService.cs" line="24" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.HneuConferenсe PreferredExecutionTarget="/Applications/Google Chrome.app" />
+</Properties>
