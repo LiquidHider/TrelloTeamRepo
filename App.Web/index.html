@@ -121,7 +121,7 @@
                         <input type="text" placeholder="Секція" name = "Section" id="Section">
                     </div>
                     <div>
-                        <input type="text" placeholder="Контактна адреса" name = "Adress" id="Adress">
+                        <input type="text" placeholder="Контактна адреса" name = "Address" id="Address">
                     </div>
                     <div>
                         <input type="text" placeholder="Телефон" name = "Phone" id="Phone">
@@ -133,14 +133,14 @@
                         <input type="text" placeholder="П.І.Б. Наукового керівника" name = "FullNameDirector" id="FullNameDirector">
                     </div>
                 </div>
-                <div class="form_conteiner_button">
+                <div id="sendForm" class="form_conteiner_button" >
                     <input type="button" type="submit" value="Зареєструватися">
                 </div>
                 <div class="form_conteiner_checkboxs">
-                    <input type="checkbox" name="option1"> Потреба у забезпеченні житла<Br>
+                    <input type="checkbox" name="option1" id = "NeedHostel"> Потреба у забезпеченні житла<Br>
                 </div>
                 <div class="form_conteiner_checkboxs">
-                    <input type="checkbox" name="option2"> Потреба у поштовій розсилці<Br>
+                    <input type="checkbox" name="option2" id = "NeedSendEmail"> Потреба у поштовій розсилці<Br>
                 </div>
             </form>
             <div></div>
@@ -235,6 +235,7 @@
             </div>
         </div>
     </footer>
+    <script type="text/javascript" src="HttpClient.js"></script>
     <script type="text/javascript">
         if (location.hash) {
         setTimeout(function() {
